@@ -1,0 +1,95 @@
+g *{
+	font-family: 'Roboto';
+}
+.storeInfoDates{
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	padding: 0;
+}
+.storeInfoDates{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.dateItem{
+	flex-grow: 1;
+	text-align: center;
+}
+.lblDate{
+	font-size: 12px;
+	font-weight: bold;
+}
+.valDate{
+	font-size: 18px;
+	display: block;
+}
+.margenNumber{
+    display: inline-block;
+    margin-right: -4px;
+}
+.margenNumber,
+.percentage{
+	color: white !important;
+}
+
+
+.ui-datepicker-header,
+td.ui-datepicker-current-day a,
+td.ui-datepicker-current-day a:active,
+td.ui-datepicker-current-day a:hover{
+    background-color: #673ab7 !important;
+}
+
+
+/*small devices*/
+@media all and (min-width: 320px){
+	.valDate{
+		font-size: 16px;
+	}
+	.storeInfoDates{
+		height: 40px;
+	}
+}
+/* Galaxy S5*/
+@media all and (min-width: 360px){
+
+}
+/*medium devices*/
+@media all and (min-width: 600px){
+	.storeInfoDates{
+		height: 50px;
+	}
+}
+
+/*Samsung tab 8*/
+@media all and (min-width: 768px){
+	.storeInfoDates{
+		height: 80px;
+	}
+	.lblDate{
+		font-size: 20px;
+	}
+	.valDate{
+		font-size: 26px;
+	}
+	g * {
+    font-size: 18px;
+	}
+	circle {
+	    r: 5;
+	}
+}
+
+/*Nexus 10*/
+@media all and (min-width: 800px){
+	circle {
+	    r: 6;
+	}
+}
+
+@media only screen and (orientation: landscape) { 
+	.valDate{
+		display: inline-block;
+	}
+}

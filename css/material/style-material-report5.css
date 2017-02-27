@@ -1,0 +1,111 @@
+.list{
+	overflow-y: auto;
+	padding-bottom: 0;
+}
+.table>thead>tr>th:not(:first-child){
+	text-align: center;
+}
+.table>tbody>tr>td:first-child{
+	font-weight: bold;
+	color: #333;
+}
+.storeInfoDates{
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	padding: 0;
+}
+.storeInfoDates{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.dateItem{
+	flex-grow: 1;
+	text-align: center;
+}
+.lblDate{
+	font-size: 12px;
+	font-weight: bold;
+}
+.valDate{
+	font-size: 18px;
+	display: block;
+}
+
+.table{
+	background-color: white;
+	margin-top: 5px;
+}
+
+.table>thead{
+	text-transform: capitalize;
+}
+
+.table>thead>tr>th{
+	border-bottom-width: 1px;
+}
+.table>tbody>tr>td:first-child{
+	text-align: left;
+}
+
+.table>thead>tr>th, 
+.table>tbody>tr>th, 
+.table>thead>tr>td, 
+.table>tbody>tr>td{
+	vertical-align: middle;
+}
+
+.ui-datepicker-header,
+td.ui-datepicker-current-day a,
+td.ui-datepicker-current-day a:active,
+td.ui-datepicker-current-day a:hover{
+    background-color: #0097a7 !important;
+} 
+
+/*small devices*/
+@media all and (min-width: 320px){
+	.valDate{
+		font-size: 16px;
+	}
+	.storeInfoDates{
+		height: 40px;
+	}
+}
+/* Galaxy S5*/
+@media all and (min-width: 360px){
+
+}
+/*medium devices*/
+@media all and (min-width: 600px){
+	.storeInfoDates{
+		height: 50px;
+	}
+}
+
+/*Samsung tab 8*/
+@media all and (min-width: 768px){
+	.storeInfoDates{
+		height: 80px;
+	}
+	.lblDate{
+		font-size: 20px;
+	}
+	.valDate{
+		font-size: 26px;
+	}
+	.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+		padding: 10px;
+	}
+	th{
+		font-size: 22px;
+	}
+	td{
+		font-size: 24px;
+	}
+}
+
+/*Nexus 10*/
+@media all and (min-width: 800px){
+
+}
